@@ -43,10 +43,6 @@ td {
   </tr>
 </table>
 
-### Skeleton Code
-
-You should start with [this applicaiton skeleton](http://cl.ly/0v0G1I273W3o).
-
 ## Useful Notes / Tidbits
 
 - What's the [right kind of association](http://guides.rubyonrails.org/association_basics.html#the-has_many-through-association) between `User` and `Skill`?
