@@ -1,6 +1,6 @@
 ## Overview
 
-For this challenge, your task is add jQuery to the provided [Sinatra Shell for Simple Simon Says]( http://cl.ly/2j2l1u1b3l43) as shown in [this exciting video](http://player.vimeo.com/video/65261103). Each new color is added after the user clicks the "Click Me' button. 
+For this challenge, your task is add jQuery to the provided Sinatra shell for "Simple Simon Says" in the `source` direcory. See the final product in [this exciting video](http://player.vimeo.com/video/65261103). Each new color is added after the user clicks the "Click Me' button. 
 
 
 ## Core
