@@ -5,4 +5,4 @@ For this challenge, your task is to implement JavaScript code that will make the
 # Useful Notes / Tidbits
 
 - For a successful solution, you'll need both "object literals" and objects created with a "constructor" and "prototype".
-- You can work in Sublime Text 2, then cut-and-paste your code into the Chrome JavaScript console for testing.
+- You can work in Sublime Text 2, then cut-and-paste your code into the Chrome JavaScript console for testing. If `node` is installed, you can run your JS source file from the terminal by typing `node source/zoo.js`.
