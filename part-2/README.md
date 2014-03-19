@@ -2,7 +2,7 @@
 
 For this challenge, your task is to modify the `main.css` file to style the page so that the end result looks like the image below. **You should NOT need to change the markup in `index.html` to achieve the result.** 
 
-<iframe src="//player.vimeo.com/video/65236443?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+[See this video](http://vimeo.com/69663952) for an example of the final product. 
 
 ## Useful Notes / Tidbits
 
