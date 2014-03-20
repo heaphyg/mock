@@ -41,3 +41,5 @@ assert(
 assert(
   animals[0].identify === animals[5].identify, "only one implementation of the identify() function should exist"
 );
+
+console.log("All tests passed");
