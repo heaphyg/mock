@@ -30,7 +30,7 @@ assert(
   Zoo.bipeds().length === 3, "the Zoo should have 3 bipeds"
 );
 assert(
-  Zoo.quadrupeds().length === 2, "the Zoo should have 2 bipeds"
+  Zoo.quadrupeds().length === 2, "the Zoo should have 2 quadrupeds"
 );
 assert(
   animals[0].identify() === "I am a Human with 2 legs.", "humans have 2 legs"
