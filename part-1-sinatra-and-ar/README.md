@@ -1,3 +1,4 @@
+
 ## Objectives
 
 For this challenge, you'll be adding some new functionality to a very basic Sinatra+ActiveRecord application. The application in its current form includes:
@@ -42,6 +43,9 @@ td {
     <td></td><td>CSS (technical)</td><td>3</td><td>no</td>
   </tr>
 </table>
+
+## Important
+** Please run `rake db:drop` before you begin to flush any old databases **
 
 ## Useful Notes / Tidbits
 

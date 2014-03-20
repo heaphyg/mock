@@ -13,6 +13,8 @@ Modify the shell code to implement the following functionality:
 <li>change the background color of the cell number returned to the color - WITHOUT MODIFYING THE HTML</li>
 </ol>
 
+## Important
+** Please run `rake db:drop` before you begin to flush any old databases **
 
 ### You know your done when:  
 * Your code produces a game that runs the same as the one in the video
