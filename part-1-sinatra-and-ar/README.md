@@ -45,7 +45,7 @@ td {
 </table>
 
 ## Important
-** Please run `rake db:drop` before you begin to flush any old databases **
+**Please run `rake db:drop` before you begin to flush any old databases**
 
 ## Useful Notes / Tidbits
 
