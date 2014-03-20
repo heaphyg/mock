@@ -1,4 +1,3 @@
-
 ## Objectives
 
 For this challenge, you'll be adding some new functionality to a very basic Sinatra+ActiveRecord application. The application in its current form includes:
@@ -15,17 +14,6 @@ You'll need to provide an interface in the application for users to select the s
 
 Also, the home page of your application should simply show each user, along with each of her skills, how many years experience she has with said skill, and whether or not she's been formally educated in that skill. For example:
 
-<style>
-tr.new-user {
-  border-top: 1px dotted grey;
-}
-th {
-  text-align: left;
-}
-td {
-  padding-right: 40px;
-}
-</style>
 <table>
   <tr>
     <th>Name</th><th>Skill</th><th>Years</th><th>Formal?</th>
