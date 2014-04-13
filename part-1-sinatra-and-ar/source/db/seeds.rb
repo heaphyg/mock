@@ -19,3 +19,22 @@ design_skills.each do |skill|
 end
 
 # TODO: create associations between users and skills
+
+User.all.count.times do
+	User.all.each do |user|
+		skill = Skill.all.sample
+		years = rand(5..20)
+		formal = [true, false].sample
+		UserSkill.create(user_id: user.id, skill_id: skill.id, years: years, formal: formal)
+	end
+end
+
+User.all.count.times do
+	User.all.each do |user|
+		skill = Skill.all.sample
+		years = rand(5..20)
+		formal = [true, false].sample
+		UserSkill.create(user_id: user.id, skill_id: skill.id, years: years, formal: formal)
+	end
+end
+

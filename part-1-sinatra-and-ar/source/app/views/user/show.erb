@@ -1,0 +1,10 @@
+<h2><%= @user.name %></h2>
+<p>click on a skill to edit it</p>
+
+<ul>
+<% @user.skills.each do |skill|%>
+	<li><a href="/edit/<%= skill.id %>"><%= skill.name%><a></li>
+<% end %>
+</ul>
+
+<a href='/new'>ADD SKILL</a><br>

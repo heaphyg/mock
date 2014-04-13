@@ -4,8 +4,10 @@ class Skill < ActiveRecord::Base
   validates :name, :presence => true
   validate :validate_context
 
-  has_many :user_skills
-  has_many :practitioners, :through => :user_skills
+  has_many :user_skills # makes a method called 'user_skills' it will always be plural
+                        # assumes class name 'UserSkill'
+                        # assumes foreign key 'skill_id' on UserSkill
+  has_many :practitioners, :through => :user_skills, source: :user  # :user here is on line 2 of user_skill.rb
 
   private
   def validate_context

@@ -1,0 +1,12 @@
+<h2>EDIT SKILL<h2>
+
+<form method='post' action="/edit/:id">
+	<input type="hidden" name="skill_id" value="<%= @skill.id %>">
+	<input type='text' name='name' placeholder="skill name"><br>
+	<textarea name="context" placeholder="creative or technical?"></textarea><br>
+	<input type='text' name='years' placeholder="years of experience"><br>
+	<label>Formal education:</label>
+	<input type="radio" name='formal' value='true'><label><strong>true</strong></label>
+	<input type="radio" name='formal' value='false'><label><strong>false</strong></label><br>
+	<input type="submit" value="submit">
+</form>

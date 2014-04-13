@@ -1,5 +1,18 @@
 <div class="container">
   <h1>User Skills and Levels</h1>
-
+  <a href='/show'>PROFILE</a>
   <%# TODO: display the skills and proficiency levels for each user ... %>
+
+  <ul>
+  	<% @users.each do |user|%>
+  	<h2><%= user.name %></h2>
+  	  <% num = 1 %>
+  	  <% user.user_skills.each do |userskill|%>
+  	    <li><strong>SKILL<%=num%></strong>:: <%= userskill.skill.name %></li>
+  	    <li>YEARS::<%= userskill.years%></li>
+  	    <li>FORMAL EDUCATION::<%= userskill.formal%></li>
+  	    <% num += 1 %>
+  	  <% end %>
+  	<% end %>
+  </ul>
 </div>

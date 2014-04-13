@@ -1,8 +1,16 @@
 get '/' do
   # render home page
-  @users = User.all
 
+  @users = User.all
   erb :index
+end
+
+
+post '/' do
+  @user = current_user # this is here so we can fill out the info on line 11
+  Skill.create!(name: params[:name], context: params[:context])  # when adding a skill - we have to create a new skill using the params and make the association
+  UserSkill.create(user_id: @user.id, skill_id: Skill.last.id, years: params[:years], formal: params[:formal])
+  redirect '/'  # we redirect here ### this produces anothe get request (line 1) which redoes line 4 so that we can iterate over @users in erb :index
 end
 
 #----------- SESSIONS -----------
@@ -56,3 +64,46 @@ post '/users' do
     erb :sign_up
   end
 end
+
+get '/show' do
+  @user = current_user
+  erb :'user/show'
+end
+
+
+
+
+#----------- SKILLS -----------
+
+get '/new' do
+  erb:'/skill/new'
+end
+
+
+get '/edit/:id' do
+  @user = current_user  # for user_skill update
+  @skill = Skill.find(params[:id])
+  erb:'skill/edit'
+end
+
+
+post '/edit/:id' do    #this was made to to the update required for an effect edit - not we have a get and post (line 83)
+  @user = current_user  # for user_skill update
+
+  @skill = Skill.find(params[:skill_id])  #remeber the name in the hiddin input in the edit form!!
+  # @skill.update(name: params[:name], context: params[:context])
+  @skill.name = params[:name]
+  @skill.context = params[:context]
+  @skill.save
+  
+  @user_skill = @skill.user_skills.first
+  @user_skill.years = params[:years]
+  @user_skill.formal = params[:formal]
+  @user_skill.save
+  # @user_skill.update(user_id: @user.id, skill_id: @skill.id, years: params[:years], formal: params[:formal])
+  redirect '/show' # When we edit a skill we want to go back to the user profile so we can see the changes
+end
+
+
+
+
