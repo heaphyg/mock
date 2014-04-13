@@ -9,13 +9,14 @@ th {
     text-align: left;
 }
 
-#color_me li{
+#color_me li {
  	display:block;
  	width:30%;
  	float:left;
  	height:200px;
  	border:solid black 2px;
  	margin:2px;
+
 }
 
 #get_color{
@@ -27,3 +28,4 @@ th {
 	display:inline-block;
 	padding:5px;
  }
+
